@@ -1,0 +1,182 @@
+:root {
+    --wpv-blue: #0A1E5C;
+    --wpv-red: #FF3B30;
+    --wpv-orange: #FF6B00;
+    --text-dark: #222;
+    --text-light: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--wpv-blue), var(--wpv-orange), #ffffff);
+    color: var(--text-light);
+}
+
+/* ===========================
+       HEADER / NAV
+   =========================== */
+.Encabezado {
+    background: var(--wpv-blue);
+    padding: 15px 0;
+    border-bottom: 4px solid var(--wpv-red);
+}
+
+.Contenedor-de-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo-img {
+    width: 140px;
+}
+
+.Centro-de-la-imagen img {
+    width: 100px;
+    height: auto;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+/* Clase activa para resaltar la página actual */
+.links a.active-link {
+    color: var(--wpv-orange);
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: var(--wpv-orange);
+    font-weight: bold;
+}
+
+/* ===========================
+       BOTONES CALENDARIO
+   =========================== */
+.BotonesCalendario {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.BotonesCalendario .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid var(--wpv-orange);
+    background-color: var(--wpv-blue);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.BotonesCalendario .btn:hover {
+    background-color: var(--wpv-orange);
+    border-color: var(--wpv-blue);
+}
+
+.BotonesCalendario .btn.active {
+    background-color: var(--wpv-orange);
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+/* ===========================
+       TITULOS DE FECHA
+   =========================== */
+h2.fecha {
+    margin: 40px 0 15px 0;
+    color: var(--text-light);
+    border-left: 5px solid var(--wpv-orange);
+    padding-left: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+/* ===========================
+       CALENDARIO / TABLAS
+   =========================== */
+.Calendario {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.Partidos {
+    flex: 1;
+    min-width: 300px;
+}
+
+.calendario {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgba(255,255,255,0.9);
+    color: #000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calendario th, .calendario td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.calendario th {
+    background-color: var(--wpv-orange);
+    color: #fff;
+    font-weight: bold;
+}
+
+.calendario tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.7);
+}
+
+.calendario tr:hover {
+    background-color: rgba(255,235,200,0.8);
+}
+
+.calendario td:last-child {
+    font-weight: bold;
+    color: var(--wpv-red);
+}
+
+/* ===========================
+       MEDIA QUERIES
+   =========================== */
+@media (max-width: 768px) {
+    .Calendario {
+        flex-direction: column;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .BotonesCalendario {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
