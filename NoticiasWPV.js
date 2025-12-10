@@ -14,7 +14,7 @@ popup.innerHTML = `
 
 document.body.appendChild(popup);
 
-// Event listeners para "Leer más"
+//"Leer más"
 const leerMasLinks = document.querySelectorAll('.noticia a');
 
 leerMasLinks.forEach(link => {

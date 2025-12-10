@@ -209,8 +209,6 @@ body {
 .Titulo:hover {
     color: var(--wpv-orange);
 }
-
-/* Responsive */
 @media (max-width: 768px) {
     body {
         font-size: 16px;

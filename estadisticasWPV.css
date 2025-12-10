@@ -17,9 +17,6 @@ body {
     color: var(--text-light);
 }
 
-/* ===========================
-       HEADER / NAV
-   =========================== */
 .Encabezado {
     background: var(--wpv-blue);
     padding: 15px 0;
@@ -56,7 +53,7 @@ body {
     transition: 0.3s;
 }
 
-/* Clase activa para resaltar la página actual */
+/* Resaldo de la  página actual */
 .links a.active-link {
     color: var(--wpv-orange);
     font-weight: bold;
@@ -67,9 +64,6 @@ body {
     font-weight: bold;
 }
 
-/* ===========================
-       TABLA / TARJETAS JUGADORES
-   =========================== */
 .TablaDeJugadores {
     width: 90%;
     margin: 30px auto;
@@ -149,7 +143,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Información expandida */
+/* Información Tarjetas */
 .info-expandida {
     margin-top: 15px;
     padding-top: 15px;
@@ -185,10 +179,6 @@ body {
     color: #d4d4d4;
     line-height: 1.5;
 }
-
-/* ===========================
-       MEDIA QUERIES
-   =========================== */
 @media (max-width: 768px) {
     .TarjetasJugadores {
         grid-template-columns: 1fr 1fr;

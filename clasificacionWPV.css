@@ -17,9 +17,6 @@ body {
     color: var(--text-light);
 }
 
-/* ===========================
-       HEADER / NAV
-   =========================== */
 .Encabezado {
     background: var(--wpv-blue);
     padding: 15px 0;
@@ -62,7 +59,7 @@ body {
     transition: 0.3s;
 }
 
-/* Clase activa para resaltar la página actual */
+/* Resaltado de la página actual */
 .links a.active-link {
     color: var(--wpv-orange);
     font-weight: bold;
@@ -73,9 +70,6 @@ body {
     font-weight: bold;
 }
 
-/* ===========================
-       CONTENIDO PRINCIPAL
-   =========================== */
 .ContenidoPrincipal {
     width: 90%;
     margin: 30px auto;
@@ -144,10 +138,6 @@ body {
 .TablaClasificacion tr:hover {
     background: rgba(255, 107, 0, 0.2);
 }
-
-/* ===========================
-       MEDIA QUERIES
-   =========================== */
 @media (max-width: 768px) {
 
     .links {
